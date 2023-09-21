@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item
+        android:id="@+id/menu_leave"
+        android:title="History"
+        android:icon="@drawable/baseline_work_history_24"/>
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:title="About this App"
+                android:id="@+id/menu_about_app"
+                android:icon="@drawable/baseline_info_24"/>
+            <item
+                android:id="@+id/menu_complain_error"
+                android:title="Complain Error"
+                android:icon="@drawable/baseline_mood_bad_24"/>
+            <item android:title="Help"
+                android:id="@+id/menu_help"
+                android:icon="@drawable/baseline_question_mark_24"/>
+
+
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/menu_logout"
+                android:title="Logout"
+                android:icon="@drawable/baseline_logout_24"/>
+        </menu>
+    </item>
+
+</menu>
