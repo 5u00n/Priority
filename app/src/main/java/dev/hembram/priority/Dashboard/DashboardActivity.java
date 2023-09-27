@@ -10,7 +10,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -89,9 +88,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         viewPager = findViewById(R.id.home_viewpager);
         tabLayout = findViewById(R.id.home_tabs);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Profile"));
-        tabLayout.addTab(tabLayout.newTab().setText("Weekly"));
-        tabLayout.addTab(tabLayout.newTab().setText("Monthly"));
+        tabLayout.addTab(tabLayout.newTab().setText("Important"));
+        tabLayout.addTab(tabLayout.newTab().setText("Blank"));
+        tabLayout.addTab(tabLayout.newTab().setText("Blank"));
 
 
         getPermission();
