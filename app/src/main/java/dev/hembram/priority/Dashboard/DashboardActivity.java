@@ -109,7 +109,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         today_text = findViewById(R.id.dashboard_text_date);
         attendance_status = findViewById(R.id.dashboard_text_attendance_status);
-        manual_attendance = findViewById(R.id.dashboard_button_manual_attendance);
+        //manual_attendance = findViewById(R.id.dashboard_button_manual_attendance);
 
         manual_attendance.setOnClickListener(v -> {
             /*Intent intent = new Intent(DashboardActivity.this, DetectFaceActivity.class);
