@@ -32,6 +32,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import dev.hembram.priority.Login.LoginActivity;
+import dev.hembram.priority.MainActivity;
 import dev.hembram.priority.R;
 
 
@@ -234,8 +236,13 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         final int menu_id=item.getItemId();
-
         drawerLayout.closeDrawer(GravityCompat.START);
+
+        if(menu_id==R.id.menu_logout){
+            auth.signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        }
         return true;
     }
 
@@ -256,7 +263,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     @Override
     protected void onRestart() {
         super.onRestart();
-
         updateUI();
     }
 }
